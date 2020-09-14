@@ -11,9 +11,6 @@ let package = Package(
         .library(
             name: "BarProgressViewStyle",
             targets: ["BarProgressViewStyle"]),
-        .library(
-            name: "SPMSwiftUIComponents",
-            targets: ["SPMSwiftUIComponents"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -25,8 +22,6 @@ let package = Package(
         .target(
             name: "BarProgressViewStyle",
             dependencies: []),
-        .target(
-            name: "SPMSwiftUIComponents",
-            dependencies: []),
+       
     ]
 )
