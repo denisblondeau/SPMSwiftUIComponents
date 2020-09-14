@@ -5,12 +5,12 @@ import PackageDescription
 
 let package = Package(
     name: "SPMSwiftUIComponents",
-    platforms: [.iOS(.v14), .macOS(.v11), .tvOS(.v14)],
+    platforms: [.iOS(.v14), .tvOS(.v14)],
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "BarProgressViewStyle",
-            targets: ["BarProgressViewStyle"]),
+            name: "ProgressViewStyles",
+            targets: ["BarProgressViewStyle", "CircularGaugeProgressViewStyle"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -21,6 +21,9 @@ let package = Package(
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
         .target(
             name: "BarProgressViewStyle",
+            dependencies: []),
+        .target(
+            name: "CircularGaugeProgressViewStyle",
             dependencies: []),
        
     ]
