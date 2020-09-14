@@ -10,7 +10,7 @@ let package = Package(
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
             name: "ProgressViewStyles",
-            targets: ["BarProgressViewStyle", "CircularGaugeProgressViewStyle", "GaugeProgressviewStyle"]),
+            targets: ["BarProgressViewStyle", "CircularGaugeProgressViewStyle", "GaugeProgressViewStyle"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -26,7 +26,7 @@ let package = Package(
             name: "CircularGaugeProgressViewStyle",
             dependencies: []),
         .target(
-            name: "GaugeProgressviewStyle",
+            name: "GaugeProgressViewStyle",
             dependencies: []),
        
     ]
