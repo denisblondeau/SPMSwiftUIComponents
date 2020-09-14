@@ -4,3 +4,4 @@ SwiftUI Components:
 
 - BarProgressViewStyle
 - CircularGaugeProgressViewStyle
+- GaugeProgressviewStyle
