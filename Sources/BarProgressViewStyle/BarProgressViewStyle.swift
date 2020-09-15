@@ -37,3 +37,13 @@ public struct BarProgressViewStyle: ProgressViewStyle {
     }
 }
 
+
+
+struct BarProgressViewStyle_Previews: PreviewProvider {
+    static var previews: some View {
+        ProgressView(value: 0.5)
+            .progressViewStyle(BarProgressViewStyle())
+            .frame(height: 15)
+            .padding()
+    }
+}

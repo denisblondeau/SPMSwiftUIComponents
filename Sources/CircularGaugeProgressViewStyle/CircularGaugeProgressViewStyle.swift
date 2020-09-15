@@ -41,3 +41,12 @@ public struct CircularGaugeProgressViewStyle: ProgressViewStyle {
         }
     }
 }
+
+struct CircularGaugeProgressViewStyle_Previews: PreviewProvider {
+    static var previews: some View {
+        ProgressView(value: 0.5)
+            .progressViewStyle(CircularGaugeProgressViewStyle())
+            .frame(height: 200)
+            .padding()
+    }
+}
