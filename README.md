@@ -1,6 +1,6 @@
 # SPMSwiftUIComponents
 
-SwiftUI Components:
+SwiftUI Components 
 
 - BarProgressViewStyle
 - CircularGaugeProgressViewStyle
