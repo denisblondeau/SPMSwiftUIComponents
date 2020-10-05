@@ -17,7 +17,7 @@ public struct CircularGaugeProgressViewStyle: ProgressViewStyle {
         Angle(degrees: 270)
     }
     var strokeColor = Color.blue
-    var strokeWidth = 25.0
+    var strokeWidth = 20.0
 
 
     public func makeBody(configuration: Configuration) -> some View {
@@ -35,7 +35,8 @@ public struct CircularGaugeProgressViewStyle: ProgressViewStyle {
                 .stroke(strokeColor, style: StrokeStyle(lineWidth: CGFloat(strokeWidth), lineCap: .round))
 
             Text(percentage)
-                .font(.system(size: 35, weight: .bold, design: .rounded))
+                .font(.system(size: 50))
+                .bold()
                 .offset(y: -4)
                 .animation(nil)
         }
