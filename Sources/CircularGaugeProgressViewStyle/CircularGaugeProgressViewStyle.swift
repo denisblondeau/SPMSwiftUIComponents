@@ -35,8 +35,8 @@ public struct CircularGaugeProgressViewStyle: ProgressViewStyle {
                 .stroke(strokeColor, style: StrokeStyle(lineWidth: CGFloat(strokeWidth), lineCap: .round))
 
             Text(percentage)
-                .font(.system(size: 50))
-                .bold()
+                .font(.system(size: 35, weight: .bold, design: .rounded))
+                .foregroundColor(.white)
                 .offset(y: -4)
                 .animation(nil)
         }
